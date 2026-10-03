@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image to Sketch Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <h1>Image to Sketch Converter</h1>
+      </header>
+
+      <div class="upload-box">
+        <label class="custom-file-upload">
+          <input type="file" id="imageInput" accept="image/*" />
+          <span>Choose Image</span>
+        </label>
+      </div>
+
+      <div class="controls">
+        <button id="convertBtn">Convert to Sketch</button>
+        <button id="resetBtn" class="secondary">Reset</button>
+      </div>
+
+      <div class="preview-area">
+        <div class="panel">
+          <h3>Original</h3>
+          <canvas id="originalCanvas"></canvas>
+        </div>
+
+        <div class="panel">
+          <h3>Sketch</h3>
+          <canvas id="sketchCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
